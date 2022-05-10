@@ -4,6 +4,12 @@ import TodoForm from './TodoForm';
 function TodoList() {
   const [todos, setTodos] = useState([]);
 
+  const addTodo = (todo) => {
+    if(!todo.text || /^\$/.test(todo.text)) {
+      return
+    }
+  }
+
   return (
     <div>
       <h1>What's the Plan for Today?</h1>

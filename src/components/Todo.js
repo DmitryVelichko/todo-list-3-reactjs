@@ -9,7 +9,9 @@ function Todo() {
   })
 
   return TodoList.map((todo, index) => (
-      <div className={todo.isComplete ? 'todo-tow complete' : 'todo-row'}></div>
+      <div className={todo.isComplete ? 'todo-tow complete' : 'todo-row'} key={index}>
+          <div key={todo.id} onClick={() => completeTodo(todo.id)}>{todo.text}</div>
+      </div>
   ))
 }
 

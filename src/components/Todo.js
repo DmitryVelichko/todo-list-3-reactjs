@@ -9,7 +9,7 @@ function Todo() {
   })
 
   return TodoList.map((todo, index) => (
-      <div></div>
+      <div className={todo.isComplete ? 'todo-tow complete' : 'todo-row'}></div>
   ))
 }
 

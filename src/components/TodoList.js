@@ -19,6 +19,9 @@ function TodoList() {
     <div>
       <h1>What's the Plan for Today?</h1>
       <TodoForm onSubmit={addTodo} />
+      <Todo 
+      
+      />
     </div>
   );
 }

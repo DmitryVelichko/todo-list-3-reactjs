@@ -23,7 +23,7 @@ function Todo({todos, completeTodo}) {
           onClick={() => removeTodo(todo.id)}
           className='delete-icon'
           />
-          <TiEdit />
+          <TiEdit onClick={() => setEdit({id: todo.id, value: todo.text})}/>
       </div>
     </div>
   ));
